@@ -1,11 +1,12 @@
 import React from 'react';
 import DashboardPage from './../components/DashboardPage';
-import LoginPage from './../components/LoginPage';
+import AboutMePage from './../components/AboutMePage';
+import ResumePage from './../components/ResumePage';
+import ProjectsPage from './../components/ProjectsPage';
 import NotFoundPage from './../components/NotFoundPage';
-import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'
-import PrivateRoute from  './PrivateRoute';
-import PublicRoute from  './PublicRoute';
+
 
 export const history = createHistory();
 
@@ -13,9 +14,11 @@ const AppRouter = () => (
     <Router history={history}>
         <div>
             <Switch>
-                <PublicRoute path="/" component = {LoginPage} exact={true}/>
-                <PrivateRoute path="/dashboard" component = {DashboardPage}/>
-                <PublicRoute component={NotFoundPage} />
+                <Route path="/" component = {DashboardPage} exact={true}/>
+                <Route path="/aboutme" component = {AboutMePage}/>
+                <Route path="/resume" component = {ResumePage}/>
+                <Route path="/projects" component = {ProjectsPage}/>
+                <Route component={NotFoundPage} />
             </Switch>
         </div>
     </Router>
