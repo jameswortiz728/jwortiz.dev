@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
 
-const ProjectItemPage = (props) => {
+const ProjectItemPage = () => {
 
     const location = useLocation();
     const propsData = location.state;
@@ -19,8 +19,10 @@ const ProjectItemPage = (props) => {
                 </div>
             </div>
             <div className="content-container">
+                <p>Project image will go here</p>
                 <p>{propsData.description}</p>
-                <p>{propsData.link}</p>
+                <p>{propsData.url}</p>
+                <p>Button here for above link</p>
             </div>  
             <Footer/>
         </div>

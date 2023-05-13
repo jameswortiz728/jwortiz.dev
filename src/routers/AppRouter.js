@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import DashboardPage from './../components/DashboardPage';
 import AboutMePage from './../components/AboutMePage';
 import ResumePage from './../components/ResumePage';
@@ -17,7 +17,7 @@ const AppRouter = () => {
                     <Route path="/resume" element = {<ResumePage/>}/>
                     <Route exact path="/projects" element={<ProjectsPage/>}/>
                     <Route path="/projects/:title" element={<ProjectItemPage/>} />
-                    <Route element={<NotFoundPage/>} />
+                    <Route path='*' element={<NotFoundPage/>} />
                 </Routes>
             </div>
         </BrowserRouter>
