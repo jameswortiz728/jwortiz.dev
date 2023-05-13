@@ -1,27 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import DashboardPage from './../components/DashboardPage';
 import AboutMePage from './../components/AboutMePage';
 import ResumePage from './../components/ResumePage';
 import ProjectsPage from './../components/ProjectsPage';
+import ProjectItemPage from './../components/ProjectItemPage';
 import NotFoundPage from './../components/NotFoundPage';
-import { Router, Route, Switch } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
-export const history = createHistory();
-
-const AppRouter = () => (
-    <Router history={history}>
-        <div>
-            <Switch>
-                <Route path="/" component = {DashboardPage} exact={true}/>
-                <Route path="/aboutme" component = {AboutMePage}/>
-                <Route path="/resume" component = {ResumePage}/>
-                <Route path="/projects" component = {ProjectsPage}/>
-                <Route component={NotFoundPage} />
-            </Switch>
-        </div>
-    </Router>
-);
+const AppRouter = () => {
+    return (
+        <BrowserRouter>
+            <div>
+                <Routes>
+                    <Route exact path="/" element = {<DashboardPage/>}/>
+                    <Route path="/aboutme" element = {<AboutMePage/>}/>
+                    <Route path="/resume" element = {<ResumePage/>}/>
+                    <Route exact path="/projects" element={<ProjectsPage/>}/>
+                    <Route path="/projects/:title" element={<ProjectItemPage/>} />
+                    <Route element={<NotFoundPage/>} />
+                </Routes>
+            </div>
+        </BrowserRouter>
+    )
+};
 
 export default AppRouter;

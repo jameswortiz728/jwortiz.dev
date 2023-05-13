@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useReducer } from 'react';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
+import projectsFixture from './../fixtures/projects';
+import projectsReducer from './../reducers/projects';
+import ProjectList from './../components/ProjectList';
+import ProjectsContext from '../context/projects-context';
 
 const ProjectsPage = () => {
+    const [projects, dispatch] = useReducer(projectsReducer, [])
+
+    useEffect(() => {
+        const projects = projectsFixture;
+        dispatch({ type: 'POPULATE_PROJECTS', projects});
+        console.log('populated projects');
+    }, []);
+
     return (
-        <div>
+        <ProjectsContext.Provider value={{ projects, dispatch }}>
             <Header/>
             <div className="page-header">
                 <div className="content-container">
@@ -12,11 +24,11 @@ const ProjectsPage = () => {
                 </div>
             </div>
             <div className="content-container">
-                <p>Insert project list here. Links to Heroku, screenshots for each and a small description. Make modular so easier to add more</p>
+                 <ProjectList/>
             </div>
             <Footer/>
-        </div>
+        </ProjectsContext.Provider>
     )
-}
+};
 
 export default ProjectsPage;
