@@ -12,7 +12,6 @@ const ProjectsPage = () => {
     useEffect(() => {
         const projects = projectsFixture;
         dispatch({ type: 'POPULATE_PROJECTS', projects});
-        console.log('populated projects');
     }, []);
 
     return (

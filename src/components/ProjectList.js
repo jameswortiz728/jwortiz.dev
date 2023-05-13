@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import ProjectListItem from './../components/projectlistitem';
+import ProjectListItem from './../components/ProjectListItem';
 import ProjectsContext from '../context/projects-context';
 
 const ProjectList = () => {
