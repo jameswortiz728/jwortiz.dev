@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
 
@@ -23,6 +23,7 @@ const ProjectItemPage = () => {
                 <p>{propsData.description}</p>
                 <p>{propsData.url}</p>
                 <p>Button here for above link</p>
+                <Link to="/projects"><button>Go back</button></Link>
             </div>  
             <Footer/>
         </div>
