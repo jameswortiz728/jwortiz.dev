@@ -13,10 +13,10 @@ const ResumePage = () => {
                 </div>
             </div>
             <div className="content-container">
-                <p>Unable to view the document? Download it from <Link to='Ortiz-James-Resume.pdf' target="_blank" download>here</Link></p>
+                <p>Unable to view the document? Download it from <Link to='/assets/Ortiz-James-Resume.pdf' target="_blank" download>here</Link></p>
                 <div style={{ height: "100vh" }}>
                     <embed
-                        src="Ortiz-James-Resume.pdf"
+                        src="/assets/Ortiz-James-Resume.pdf"
                         type="application/pdf"
                         width="100%"
                         height="100%"
