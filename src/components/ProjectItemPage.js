@@ -17,10 +17,9 @@ const ProjectItemPage = () => {
                 </div>
             </div>
             <div className="content-container">
-                <p>Project image will go here</p>
-                <p>{project.description}</p>
-                <p>{project.url}</p>
-                <p>Button here for above link</p>
+                <img src={`/images/${project.title}.png`} />
+                <p>{project.pageDescription}</p>
+                <Link to={project.url}><button>Continue to App</button></Link>
                 <Link to="/projects"><button>Go back</button></Link>
             </div>  
             <Footer/>

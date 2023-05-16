@@ -11,7 +11,7 @@ const ProjectListItem = ({ project }) => {
     >
       <div>
         <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <p>{project.previewDescription}</p>
       </div>
     </Link> 
   )
