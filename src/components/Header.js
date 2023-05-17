@@ -8,9 +8,9 @@ export const Header = () => (
                 <Link className="header__title" to="/">
                     <h1>JWOrtiz.io</h1>
                 </Link>
-                <Link to="/aboutme"><button>About Me</button></Link>
-                <Link to="/resume"><button>Resume</button></Link>
-                <Link to="/projects"><button>Projects</button></Link>
+                <Link to="/aboutme"><button className="button button--link">About Me</button></Link>
+                <Link to="/resume"><button className="button button--link">Resume</button></Link>
+                <Link to="/projects"><button className="button button--link">Projects</button></Link>
             </div>
         </div>
     </header>

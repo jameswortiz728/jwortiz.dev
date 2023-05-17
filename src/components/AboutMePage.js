@@ -5,7 +5,6 @@ import Footer from './../components/Footer';
 const AboutMePage = () => {
     return (
         <div>
-            <Header/>
             <div className="page-header">
                 <div className="content-container">
                     <h1 className="page-header__title">About me</h1>
@@ -19,7 +18,6 @@ const AboutMePage = () => {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <Footer/>
         </div>
     )
 }

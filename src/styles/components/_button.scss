@@ -12,6 +12,9 @@
 
 .button--link {
     background: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .button--secondary {

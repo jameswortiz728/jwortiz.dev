@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from './../components/Header';
-import Footer from './../components/Footer';
 import { Link } from 'react-router-dom';
 
 const ResumePage = () => {
     return (
         <div>
-            <Header/>
             <div className="page-header">
                 <div className="content-container">
                     <h1 className="page-header__title">Resume</h1>
@@ -23,7 +20,6 @@ const ResumePage = () => {
                     />
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

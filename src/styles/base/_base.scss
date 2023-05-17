@@ -24,3 +24,8 @@ button:disabled {
 .is-active {
     font-weight: bold;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

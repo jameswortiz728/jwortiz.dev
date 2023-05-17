@@ -16,7 +16,6 @@
 
 .list-item {
     border: 1px solid darken($off-white, 7%);
-    border-top: none;
     color: $dark-grey;
     display: flex;
     flex-direction: column;
@@ -25,6 +24,7 @@
     transition: background .3s ease;
     &:hover {
         background: $off-white;
+        text-decoration: underline;
     }
     @media (min-width: $desktop-breakpoint) {
         align-items: center;
