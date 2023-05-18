@@ -16,7 +16,8 @@ const ProjectItemPage = () => {
             <div className="content-container">
                 <img src={`/images/${project.title}.png`} />
                 <p>{project.pageDescription}</p>
-                <Link target="_blank" to={project.url}><button className="button">Continue to App</button></Link>
+                <Link target="_blank" to={project.liveSite}><button className="button">Live Site</button></Link>
+                <Link target="_blank" to={project.sourceCode}><button className="button button--source">Source Code</button></Link>
                 <Link to="/"><button className="button button--secondary">Go back</button></Link>
             </div>  
         </div>
