@@ -17,7 +17,7 @@ const ProjectItemPage = () => {
                 <img src={`/images/${project.title}.png`} />
                 <p>{project.pageDescription}</p>
                 <Link target="_blank" to={project.url}><button className="button">Continue to App</button></Link>
-                <Link to="/projects"><button className="button button--secondary">Go back</button></Link>
+                <Link to="/"><button className="button button--secondary">Go back</button></Link>
             </div>  
         </div>
     )

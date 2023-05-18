@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ResumePage = () => {
     return (
-        <div>
-            <div className="page-header">
+        <div id="resume">
+            <div className="page-header__main">
                 <div className="content-container">
                     <h1 className="page-header__title">Resume</h1>
                 </div>

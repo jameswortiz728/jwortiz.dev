@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DashboardPage = () => (
-    <div>
+    <div id="dashboard">
         <h1 className="page-header__welcome">Welcome!</h1>
         <div className="content-container">
             <p>Click the button below, or use the header above to learn more about me</p>

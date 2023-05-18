@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import handleScrollTo from '../functions/handleScrollTo';
 
 export const Header = () => (
     <header className="header">
@@ -8,9 +9,9 @@ export const Header = () => (
                 <Link className="header__title" to="/">
                     <h1>JWOrtiz.io</h1>
                 </Link>
-                <Link to="/aboutme"><button className="button button--link">About Me</button></Link>
-                <Link to="/resume"><button className="button button--link">Resume</button></Link>
-                <Link to="/projects"><button className="button button--link">Projects</button></Link>
+                <button onClick={handleScrollTo("about-me")} className="button button--link">About Me</button>
+                <button onClick={handleScrollTo("resume")} className="button button--link">Resume</button>
+                <button onClick={handleScrollTo("projects")} className="button button--link">Projects</button>
             </div>
         </div>
     </header>

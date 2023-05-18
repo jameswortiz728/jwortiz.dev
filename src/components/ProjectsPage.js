@@ -16,7 +16,7 @@ const ProjectsPage = () => {
 
     return (
         <ProjectsContext.Provider value={{ projects, dispatch }}>
-            <div className="page-header">
+            <div id="projects" className="page-header__main">
                 <div className="content-container">
                     <h1 className="page-header__title">Projects</h1>
                 </div>
