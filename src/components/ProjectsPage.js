@@ -1,13 +1,11 @@
 import React, { useEffect, useReducer } from 'react';
-import Header from './../components/Header';
-import Footer from './../components/Footer';
 import projectsFixture from './../fixtures/projects';
 import projectsReducer from './../reducers/projects';
 import ProjectList from './../components/ProjectList';
 import ProjectsContext from '../context/projects-context';
 
 const ProjectsPage = () => {
-    const [projects, dispatch] = useReducer(projectsReducer, [])
+    const [projects, dispatch] = useReducer(projectsReducer, []);
 
     useEffect(() => {
         const projects = projectsFixture;
@@ -16,13 +14,15 @@ const ProjectsPage = () => {
 
     return (
         <ProjectsContext.Provider value={{ projects, dispatch }}>
-            <div id="projects" className="page-header__main">
-                <div className="content-container">
-                    <h1 className="page-header__title">Projects</h1>
+            <div id="projects" className="spacer">
+                <div className="page-header__main">
+                    <div className="content-container">
+                        <h1 className="page-header__title">Projects</h1>
+                    </div>
                 </div>
-            </div>
-            <div className="content-container">
-                 <ProjectList/>
+                <div className="content-container">
+                    <ProjectList/>
+                </div>
             </div>
         </ProjectsContext.Provider>
     )

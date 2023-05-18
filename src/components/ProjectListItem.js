@@ -6,7 +6,7 @@ const ProjectListItem = ({ project }) => {
   return (
     <Link 
       className="list-item" 
-      to={{ pathname: `/projects/${project.title}`}} 
+      to={{ pathname: `/${project.title}`}} 
       state = { project }
     >
       <div>

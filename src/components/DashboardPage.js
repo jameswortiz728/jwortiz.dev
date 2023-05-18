@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const DashboardPage = () => (
-    <div id="dashboard">
-        <h1 className="page-header__welcome">Welcome!</h1>
-        <div className="content-container">
-            <p>Click the button below, or use the header above to learn more about me</p>
-            <Link to="/aboutme"><button className="button">Proceed</button></Link>
+const DashboardPage = () => {
+    return (
+        <div id="dashboard" className="spacer spacer--welcome">
+            <div>
+                <h1 className="page-header__welcome">Welcome!</h1>
+                <div className="content-container">
+                    <p>Scroll down, or use the header above to learn more about me</p>
+                </div>
+            </div>
         </div>
-    </div>
-    
-);
+    )
+};
 
 export default DashboardPage;

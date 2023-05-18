@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import handleScrollTo from '../functions/handleScrollTo';
 
 const ProjectItemPage = () => {
 
@@ -18,7 +19,7 @@ const ProjectItemPage = () => {
                 <p>{project.pageDescription}</p>
                 <Link target="_blank" to={project.liveSite}><button className="button">Live Site</button></Link>
                 <Link target="_blank" to={project.sourceCode}><button className="button button--source">Source Code</button></Link>
-                <Link to="/"><button className="button button--secondary">Go back</button></Link>
+                <Link to="/"><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
             </div>  
         </div>
     )

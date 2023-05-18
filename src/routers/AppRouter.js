@@ -17,7 +17,7 @@ const AppRouter = () => {
                 <Header/>
                 <Routes>
                     <Route exact path="/" element = {<MainPage/>}/>
-                    <Route path="/projects/:title" element={<ProjectItemPage/>} />
+                    <Route path="/:title" element={<ProjectItemPage/>} />
                     <Route path='*' element={<NotFoundPage/>} />
                 </Routes>
             </div>
