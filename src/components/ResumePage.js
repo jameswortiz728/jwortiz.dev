@@ -9,10 +9,10 @@ const ResumePage = () => {
                 <div className="page-header__main">
                     <div className="content-container">
                         <h1 className="page-header__title">Resume</h1>
+                        <p>Unable to view the document? Download it from <Link to='/assets/Ortiz-James-Resume.pdf' target="_blank" download>here</Link></p>
                     </div>
                 </div>
                 <div className="content-container">
-                    <p>Unable to view the document? Download it from <Link to='/assets/Ortiz-James-Resume.pdf' target="_blank" download>here</Link></p>
                     <div style={{ height: "100vh" }}>
                         <embed
                             src="/assets/Ortiz-James-Resume.pdf"

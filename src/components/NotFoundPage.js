@@ -9,7 +9,7 @@ const NotFoundPage = () => (
             </div>
         </div>
         <div className="content-container">
-            <Link to="/"><button>Go home</button></Link>
+            <Link to="/"><button className="button">Go home</button></Link>
         </div>
     </div>
 );

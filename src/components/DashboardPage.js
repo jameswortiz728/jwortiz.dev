@@ -6,7 +6,7 @@ const DashboardPage = () => {
             <div>
                 <h1 className="page-header__welcome">Welcome!</h1>
                 <div className="content-container">
-                    <p>Scroll down, or use the header above to learn more about me</p>
+                    <p>Use the header above, or just scroll down to learn more about me</p>
                 </div>
             </div>
         </div>

@@ -9,9 +9,9 @@ export const Header = () => (
                 <Link className="header__title" to="/" onClick={() => handleScrollTo('dashboard')}>
                     <h1>JWOrtiz.io</h1>
                 </Link>
-                <button onClick={() => handleScrollTo('aboutMe')} className="button button--link">About Me</button>
-                <button onClick={() => handleScrollTo('projects')} className="button button--link">Projects</button>
-                <button onClick={() => handleScrollTo('resume')} className="button button--link">Resume</button>
+                <Link to="/" state = {{ id: "aboutMe" }}><button onClick={() => handleScrollTo('aboutMe')} className="button button--link">About Me</button></Link>
+                <Link to="/" state = {{ id: "projects" }}><button onClick={() => handleScrollTo('projects')} className="button button--link">Projects</button></Link>
+                <Link to="/" state = {{ id: "resume" }}><button onClick={() => handleScrollTo('resume')} className="button button--link">Resume</button></Link>
             </div>
         </div>
     </header>

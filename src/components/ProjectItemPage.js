@@ -19,7 +19,7 @@ const ProjectItemPage = () => {
                 <p>{project.pageDescription}</p>
                 <Link target="_blank" to={project.liveSite}><button className="button">Live Site</button></Link>
                 <Link target="_blank" to={project.sourceCode}><button className="button button--source">Source Code</button></Link>
-                <Link to="/"><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
+                <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
             </div>  
         </div>
     )

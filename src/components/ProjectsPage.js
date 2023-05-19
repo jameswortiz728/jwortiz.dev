@@ -18,6 +18,7 @@ const ProjectsPage = () => {
                 <div className="page-header__main">
                     <div className="content-container">
                         <h1 className="page-header__title">Projects</h1>
+                        <p>Click on the boxes below to learn more about each project</p>
                     </div>
                 </div>
                 <div className="content-container">
