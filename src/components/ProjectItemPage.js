@@ -16,10 +16,10 @@ const ProjectItemPage = () => {
             </div>
             <div className="content-container">
                 <img src={`/images/${project.title}.png`} />
-                <p>{project.pageDescription}</p>
                 <Link target="_blank" to={project.liveSite}><button className="button">Live Site</button></Link>
                 <Link target="_blank" to={project.sourceCode}><button className="button button--source">Source Code</button></Link>
                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
+                <p>{project.pageDescription}</p>
             </div>  
         </div>
     )
