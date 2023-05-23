@@ -13,7 +13,7 @@ const ResumePage = () => {
                     </div>
                 </div>
                 <div className="content-container">
-                    <div style={{ height: "100vh" }}>
+                    <div style={{ height: "75vh" }}>
                         <embed
                             src="/assets/Ortiz-James-Resume.pdf"
                             type="application/pdf"
