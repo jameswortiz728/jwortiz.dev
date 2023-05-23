@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import DashboardPage from './../components/DashboardPage';
 import AboutMePage from './../components/AboutMePage';
+import ContactMePage from './../components/ContactMePage';
 import ResumePage from './../components/ResumePage';
 import ProjectsPage from './../components/ProjectsPage';
 import handleScrollTo from '../functions/handleScrollTo';
@@ -21,6 +22,7 @@ const MainPage = () => {
             <AboutMePage/>
             <ProjectsPage/>
             <ResumePage/>
+            <ContactMePage/>
         </div>
     )
 };
