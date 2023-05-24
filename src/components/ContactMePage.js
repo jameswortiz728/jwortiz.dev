@@ -17,11 +17,13 @@ const ContactMePage = ()=> {
                 </div>
             </div>
             <div className="content-container">
-                <form onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit}>
                     <label htmlFor="email">
-                        Email Address
+                        Your email address:
                     </label>
                     <input
+                        className="text-input"
+                        placeholder="Your email: e.g. abc@gmail.com"
                         id="email"
                         type="email" 
                         name="email"
@@ -31,7 +33,12 @@ const ContactMePage = ()=> {
                         field="email"
                         errors={state.errors}
                     />
+                    <label htmlFor="message">
+                        and your message for me:
+                    </label>
                     <textarea
+                        className="textarea"
+                        placeholder='Your message for me: e.g. "Awesome Portfolio!"'
                         id="message"
                         name="message"
                     />
@@ -40,7 +47,7 @@ const ContactMePage = ()=> {
                         field="message"
                         errors={state.errors}
                     />
-                    <button type="submit" disabled={state.submitting}>
+                    <button className="button" type="submit" disabled={state.submitting}>
                         Submit
                     </button>
                 </form>
