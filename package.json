@@ -46,19 +46,17 @@
     "uuid": "3.1.0",
     "validator": "8.0.0",
     "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1",
-    "css-minimizer-webpack-plugin": "^5.0.0",
-    "mini-css-extract-plugin": "^2.7.6"
+    "webpack-cli": "^5.1.1"
   },
   "devDependencies": {
     "cross-env": "5.0.5",
-    
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "dotenv": "4.0.0",
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
     "jest": "20.0.4",
-    
+    "mini-css-extract-plugin": "^2.7.6",
     "react-test-renderer": "16.0.0",
     "webpack-dev-server": "^4.15.0"
   },
