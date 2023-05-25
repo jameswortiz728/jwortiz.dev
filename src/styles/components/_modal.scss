@@ -25,6 +25,20 @@
     padding: $l-size;
     text-align: center;
 }
+
+.modal2 {
+    position: fixed;
+    z-index:9999;
+    top :0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #464b5e;
+    color: white;
+    outline: none;
+    padding: 3.2rem;
+    text-align: center;
+}
  
 .modal__title {
     margin: 0 0 $m-size 0;

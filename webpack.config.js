@@ -3,9 +3,7 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-module.exports = (env) => {
-    const isProduction = env === 'production';
-
+module.exports = () => {
     return {
         mode: 'production',
         performance: {
@@ -24,7 +22,7 @@ module.exports = (env) => {
             }, {
                 test: /\.s?css$/,
                 use: [
-                        MiniCssExtractPlugin.loader, 'style-loader',
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
@@ -36,7 +34,7 @@ module.exports = (env) => {
                         options: {
                             sourceMap: true
                         }
-                    }
+                    }  
                 ]
             }]
         },
@@ -49,7 +47,7 @@ module.exports = (env) => {
         plugins: [
             new MiniCssExtractPlugin()      
         ],
-        devtool: isProduction ? 'source-map' : 'inline-source-map',
+        devtool:'source-map',
         devServer: {
             static: {
                 directory: path.join(__dirname, 'public')
