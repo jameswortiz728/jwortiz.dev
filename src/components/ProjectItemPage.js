@@ -32,9 +32,11 @@ const ProjectItemPage = () => {
             </div>
             <div className="content-container">
                 <img src={`/images/${project.title}.png`} />
-                <button className="button" onClick={openLiveModal}>Live Site</button>
-                <button className="button button--source" onClick={openSourceModal}>Source Code</button>
-                <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
+                <div className="button--group">
+                    <button className="button" onClick={openLiveModal}>Live Site</button>
+                    <button className="button button--source" onClick={openSourceModal}>Source Code</button>
+                    <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
+                </div>
                 <p>{project.pageDescription}</p>
             </div>
             <RedirectModal open={liveOpen} closeModal={closeModal} url={project.liveSite}/>
