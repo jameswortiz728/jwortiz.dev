@@ -8,22 +8,19 @@ const ProjectItemPage = () => {
     const project = location.state;
 
     const [liveOpen, setLiveOpen] = useState(false);
-    const [sourceOpen, setSourceOpen] = useState(false)
+    const [sourceOpen, setSourceOpen] = useState(false);
 
     const openLiveModal = () => {
       setLiveOpen(true);
-    }
-  
-    const closeLiveModal = () => {
-      setLiveOpen(false);
     }
     
     const openSourceModal = () => {
         setSourceOpen(true);
     }
     
-    const closeSourceModal = () => {
+    const closeModal = () => {
         setSourceOpen(false);
+        setLiveOpen(false);
     }
 
     return (
@@ -40,8 +37,8 @@ const ProjectItemPage = () => {
                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
                 <p>{project.pageDescription}</p>
             </div>
-            <RedirectModal open={liveOpen} closeModal={closeLiveModal} url={project.liveSite}/>
-            <RedirectModal open={sourceOpen} closeModal={closeSourceModal} url={project.sourceCode}/>   
+            <RedirectModal open={liveOpen} closeModal={closeModal} url={project.liveSite}/>
+            <RedirectModal open={sourceOpen} closeModal={closeModal} url={project.sourceCode}/>   
         </div>
     )
 };
