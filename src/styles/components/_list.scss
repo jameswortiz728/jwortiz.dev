@@ -23,7 +23,7 @@
     text-decoration: none;
     transition: background .3s ease;
     &:hover {
-        background: $off-white;
+        background: $light-blue;
         text-decoration: underline;
     }
     @media (min-width: $desktop-breakpoint) {
