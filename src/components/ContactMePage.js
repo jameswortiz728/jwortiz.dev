@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
+import ContactModal from './../components/ContactModal';
 
 const ContactMePage = () => {
-  const [state, handleSubmit] = useForm("mlekkjze");
+    const [state, handleSubmit] = useForm("mlekkjze");
+    const [open, setOpen] = useState(true);
 
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
+    const openModal = () => {
+        setOpen(true);
+    }
 
-  return (
+    const closeModal = () => {
+        setOpen(false);
+    }
+
+    if (state.succeeded) {
+
+        openModal();
+    
+        return (
+            <div>
+                <div className="content-container">
+                    <h1>You are being redirected!</h1>
+                    <h1>One moment please...</h1>
+                    <div className="spacer"></div>
+                </div>
+                <ContactModal open={open} closeModal={closeModal}/> 
+            </div>
+        ) 
+    }
+
+    return (
         <div id="contactme" className="spacer">
             <div className="page-header__main">
                 <div className="content-container">
@@ -53,7 +74,6 @@ const ContactMePage = () => {
                     </button>
                 </form>
             </div>
-            
         </div>
     );
 }
