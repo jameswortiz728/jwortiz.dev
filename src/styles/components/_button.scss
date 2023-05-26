@@ -15,8 +15,10 @@
 .button--group {
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
+    @media (min-width: $desktop-breakpoint) {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
 
 .button--link {
