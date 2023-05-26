@@ -15,15 +15,14 @@ const ContactMePage = () => {
     }
 
     if (state.succeeded) {
-
-        openModal();
-    
         return (
-            <div>
-                <div className="content-container">
-                    <h1>You are being redirected!</h1>
-                    <h1>One moment please...</h1>
-                    <div className="spacer"></div>
+            <div id="contactme">
+                <div className="page-header__main">
+                    <div className="content-container">
+                        <h1>Thank you for your submission!</h1>
+                        <h1>An email has been sent to James@jwortiz.dev</h1>
+                        <div className="spacer"></div>
+                    </div>
                 </div>
                 <ContactModal open={open} closeModal={closeModal}/> 
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-const RedirectModal = ({ open, closeModal }) => {
+const ContactModal = ({ open, closeModal }) => {
 
     return (
         <div>
@@ -12,11 +12,11 @@ const RedirectModal = ({ open, closeModal }) => {
                 className="modal"
             >
                 <h3 className="modal__title">Thanks for your submission!</h3>
-                <p className="modal__body">You are being redirected...</p>
-                <button className="button" onClick={closeModal}>Okay</button>
+                <p className="modal__body">An email has been sent to James@jwortiz.dev</p>
+                <button className="button button--secondary" onClick={closeModal}>Close</button>
             </Modal>
         </div> 
     )
 };
 
-export default RedirectModal;
+export default ContactModal;

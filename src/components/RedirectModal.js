@@ -8,7 +8,7 @@ const RedirectModal = ({ open, closeModal, url }) => {
         <div>
             <Modal
                 isOpen={open}
-                contentLabel="Website redirect"
+                contentLabel="Project redirect"
                 closeTimeoutMS={200}
                 className="modal"
             >
