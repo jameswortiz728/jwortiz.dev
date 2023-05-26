@@ -35,7 +35,7 @@ export const Header = () => {
                 </div>
                 {open && 
                     <div className="show-for-mobile">
-                        <ul>
+                        <ul className="header__dropdown">
                             <li><Link onClick={closeDropdown} to="/" state = {{ id: "aboutMe" }}><button onClick={() => handleScrollTo('aboutMe')} className="button button--link">About Me</button></Link></li>
                             <li><Link onClick={closeDropdown} to="/" state = {{ id: "projects" }}><button onClick={() => handleScrollTo('projects')} className="button button--link">Projects</button></Link></li>
                             <li><Link onClick={closeDropdown} to="/" state = {{ id: "resume" }}><button onClick={() => handleScrollTo('resume')} className="button button--link">Resume</button></Link></li>
