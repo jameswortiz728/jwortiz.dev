@@ -23,7 +23,7 @@ export const Header = () => {
             <div className="content-container">
                 <div className="header__content">
                     <Link className="header__title" to="/" onClick={() => handleScrollTo('dashboard')}>
-                        <h1>JWOrtiz.dev</h1>
+                        <h1 onClick={closeDropdown}>JWOrtiz.dev</h1>
                     </Link>
                     <Link className="show-for-desktop" to="/" state = {{ id: "aboutMe" }}><button onClick={() => handleScrollTo('aboutMe')} className="button button--link">About Me</button></Link>
                     <Link className="show-for-desktop" to="/" state = {{ id: "projects" }}><button onClick={() => handleScrollTo('projects')} className="button button--link">Projects</button></Link>
