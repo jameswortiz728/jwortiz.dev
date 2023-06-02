@@ -3,6 +3,7 @@ import projectsFixture from './../fixtures/projects';
 import projectsReducer from './../reducers/projects';
 import ProjectList from './../components/ProjectList';
 import ProjectsContext from '../context/projects-context';
+import handleScrollTo from '../functions/handleScrollTo';
 
 const ProjectsPage = () => {
     const [projects, dispatch] = useReducer(projectsReducer, []);
@@ -23,6 +24,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className="content-container">
                     <ProjectList/>
+                    <button onClick={() => handleScrollTo('resume')} className="button">Next Section: Resume</button>
                 </div>
             </div>
         </ProjectsContext.Provider>

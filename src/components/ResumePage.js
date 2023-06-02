@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import handleScrollTo from '../functions/handleScrollTo';
 
 const ResumePage = () => {
 
@@ -21,6 +22,7 @@ const ResumePage = () => {
                             height="100%"
                         />
                     </div>
+                    <button onClick={() => handleScrollTo('contactme')} className="button">Next Section: Contact Me</button>
                 </div>
             </div>  
         </div>
