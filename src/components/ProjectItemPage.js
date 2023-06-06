@@ -31,6 +31,7 @@ const ProjectItemPage = () => {
                     <div>
                         <h1 className="page-header__big">{project.name}</h1>
                         <div className="show-for-desktop">
+                            <p>{project.pageDescription}</p>
                             <div className="button--group">
                                 <button className="button" onClick={openLiveModal}>Live Site</button>
                                 <button className="button button--source" onClick={openSourceModal}>Source Code</button>
@@ -46,8 +47,8 @@ const ProjectItemPage = () => {
                                 <button className="button button--source" onClick={openSourceModal}>Source Code</button>
                                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
                             </div>
-                        </div> 
-                        <p>{project.pageDescription}</p>
+                            <p>{project.pageDescription}</p>
+                        </div>   
                     </div>
                 </div>
             </div>
