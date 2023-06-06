@@ -12,13 +12,11 @@ const ResumePage = () => {
                         <p>Unable to view the document? Download it from <Link to='/assets/Ortiz-James-Resume.pdf' target="_blank" download>here</Link></p>
                         <div className="show-for-desktop"><button onClick={() => handleScrollTo('contactme')} className="button">Next Section: Contact Me</button></div>
                     </div>
-                    <div>
                         <embed
                             className="content-container__resume"
                             src="/assets/Ortiz-James-Resume.pdf"
                             type="application/pdf"
                         />
-                    </div>
                     <div className="show-for-mobile"><button onClick={() => handleScrollTo('contactme')} className="button">Next Section: Contact Me</button></div>
                 </div>
             </div>
