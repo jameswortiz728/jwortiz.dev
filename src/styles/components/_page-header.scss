@@ -26,15 +26,12 @@
     }
 }
 
-.page-header__welcome {
-    font-size: 85px;
+.page-header__big {
+    font-size: 69px;
     animation: fadein 2s;
+    
     @media (min-width: $desktop-breakpoint) {
-        font-size: 225px;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 10%;
-        margin-bottom: 0;
+        font-size: 120px;
     }
 }
 

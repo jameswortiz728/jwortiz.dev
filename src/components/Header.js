@@ -20,7 +20,7 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <div className="content-container">
+            <div className="content-container__header">
                 <div className="header__content">
                     <Link className="header__title" to="/" onClick={() => handleScrollTo('dashboard')}>
                         <h1 onClick={closeDropdown}>JWOrtiz.dev</h1>
