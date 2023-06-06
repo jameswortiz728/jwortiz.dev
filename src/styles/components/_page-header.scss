@@ -27,11 +27,12 @@
 }
 
 .page-header__big {
-    font-size: 69px;
+    font-size: 68px;
     animation: fadein 2s;
-    
+    padding-top: 10%;
     @media (min-width: $desktop-breakpoint) {
         font-size: 120px;
+        padding-top: 0%;
     }
 }
 
