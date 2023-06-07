@@ -12,6 +12,72 @@
     }
 }
 
+.button--secondary {
+    background: #888888;
+}
+
+.button--source {
+    background: green;
+}
+
+.button--welcome {
+    background: $red;
+}
+
+.button--aboutme {
+    background: $orange;
+}
+
+.button--projects {
+    background: $purple;
+}
+
+.button--resume {
+    background: $green;
+}
+
+.button--contactme {
+    background: $blue;
+}
+
+.button__link {
+    background: none;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    padding: $s-size;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button__link--welcome {
+    color: $red;
+}
+
+.button__link--aboutme {
+    color: $orange;
+}
+
+.button__link--projects {
+    color: $purple;
+}
+
+.button__link--resume {
+    color: $green;
+}
+
+.button__link--contactme {
+    color: $blue;
+}
+
+.button__link--fasttravel {
+    color: $yellow;
+}
+
 .button--group {
     display: flex;
     justify-content: space-between;
@@ -21,14 +87,5 @@
     }
 }
 
-.button--link {
-    background: none;
-}
 
-.button--secondary {
-    background: #888888;
-}
 
-.button--source {
-    background: green;
-}

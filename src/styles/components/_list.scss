@@ -16,14 +16,14 @@
 
 .list-item {
     border: 1px solid darken($off-white, 7%);
-    color: $dark-grey;
+    color: $off-white;
     display: flex;
     flex-direction: column;
     padding: $s-size;
     text-decoration: none;
     transition: background .3s ease;
     &:hover {
-        background: $light-blue;
+        background: $purple;
         text-decoration: underline;
     }
     @media (min-width: $desktop-breakpoint) {

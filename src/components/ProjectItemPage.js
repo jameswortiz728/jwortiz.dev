@@ -29,7 +29,7 @@ const ProjectItemPage = () => {
             <div className="content-container">
                 <div className="section section--project">
                     <div>
-                        <h1 className="page-header__big">{project.name}</h1>
+                        <h1 className="page-header__big page-header__big--projectpage">{project.name}</h1>
                         <div> 
                             <div className="button--group">
                                 <button className="button" onClick={openLiveModal}>Live Site</button>

@@ -21,12 +21,12 @@ const ContactMePage = () => {
                 <div className="content-container">
                     <div className="section">
                         <div>
-                            <h1 className="page-header__big">Contact me</h1>
+                            <h1 className="page-header__big page-header__big--contactme">Contact me</h1>
                             <p>Thanks for your submission!</p> 
                         </div>
                         <div className="content-container">
                             <h1>An email has been sent to James@jwortiz.dev</h1>
-                            <button onClick={() => handleScrollTo('dashboard')} className="button">Next Section: Welcome</button>
+                            <button onClick={() => handleScrollTo('dashboard')} className="button button--contactme">Next Section: Welcome</button>
                         <div className="spacer"></div>
                     </div>
                     </div>
@@ -41,7 +41,7 @@ const ContactMePage = () => {
             <div className="content-container">
                 <div className="section">
                     <div>
-                        <h1 className="page-header__big">Contact me</h1>
+                        <h1 className="page-header__big page-header__big--contactme">Contact me</h1>
                     </div>      
                     <div className="content-container__right">                
                         <form className="form" onSubmit={handleSubmit}>
@@ -74,7 +74,7 @@ const ContactMePage = () => {
                                 field="message"
                                 errors={state.errors}
                             />
-                            <button className="button" type="submit" disabled={state.submitting}>
+                            <button className="button button--contactme" type="submit" disabled={state.submitting}>
                                 Submit
                             </button>
                         </form>

@@ -6,13 +6,13 @@ const AboutMePage = () => {
         <div id="aboutMe" className="spacer">
             <div className="content-container">
                 <div className="section">
-                    <h1 className="page-header__big">About me</h1> 
+                    <h1 className="page-header__big page-header__big--aboutme">About me</h1> 
                     <div >                
                         <p>
                             I am a Software Engineer with experience in JavaScript and Java. I graduated from Pace University with a Bachelor's in Computer Science. 
                             As a kid I built Legos, currently I build web applications, and in the future? Potentially building one for you too.
                         </p>
-                        <button onClick={() => handleScrollTo('projects')} className="button">Next Section: Projects</button>
+                        <button onClick={() => handleScrollTo('projects')} className="button button--aboutme">Next Section: Projects</button>
                     </div>
                 </div>
             </div>
