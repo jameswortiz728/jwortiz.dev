@@ -1,5 +1,5 @@
 .button {
-    background: $blue;
+    background: $purple;
     border: none;
     color: white;
     display: inline-block;
@@ -21,7 +21,7 @@
 }
 
 .button--welcome {
-    background: $red;
+    background: $blue;
 }
 
 .button--aboutme {
@@ -37,7 +37,7 @@
 }
 
 .button--contactme {
-    background: $blue;
+    background: $red;
 }
 
 .button__link {
@@ -55,7 +55,7 @@
 }
 
 .button__link--welcome {
-    color: $red;
+    color: $blue;
 }
 
 .button__link--aboutme {
@@ -71,11 +71,11 @@
 }
 
 .button__link--contactme {
-    color: $blue;
+    color: $red;
 }
 
 .button__link--fasttravel {
-    color: $yellow;
+    color: $blue;
 }
 
 .button--group {
