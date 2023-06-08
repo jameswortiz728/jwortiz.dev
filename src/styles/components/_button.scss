@@ -50,12 +50,20 @@
 
 .button--projects {
     background: $purple;
+    margin-top: $m-size;
     border-bottom: .6rem solid darken($purple, 10%);
+    @media (min-width: $desktop-breakpoint) {
+        margin-top: 0;
+    }
 }
 
 .button--resume {
     background: $green;
+    margin-top: $m-size;
     border-bottom: .6rem solid darken($green, 10%);
+    @media (min-width: $desktop-breakpoint) {
+        margin-top: 0;
+    }
 }
 
 .button--contactme {
