@@ -22,7 +22,6 @@ const ContactMePage = () => {
                     <div className="section">
                         <div>
                             <h1 className="page-header__big page-header__big--contactme">Contact me</h1>
-                            <p>Thanks for your submission!</p> 
                         </div>
                         <div className="content-container">
                             <h1>An email has been sent to James@jwortiz.dev</h1>
