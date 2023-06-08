@@ -64,6 +64,10 @@
 
 .page-header__big--404 {
     color: $yellow;
+    padding-top: 10%;
+    @media (min-width: $desktop-breakpoint) {
+        padding-top: 0%;
+    }
 }
 
 
