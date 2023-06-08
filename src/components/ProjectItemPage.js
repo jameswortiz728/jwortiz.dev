@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import handleScrollTo from '../functions/handleScrollTo';
 import RedirectModal from './../components/RedirectModal';
+import NotFoundPage from './../components/NotFoundPage';
 
 const ProjectItemPage = () => {
     const location = useLocation();
@@ -23,6 +24,11 @@ const ProjectItemPage = () => {
         setLiveOpen(false);
     }
 
+    if(project === null) {
+        return (
+            <NotFoundPage/>
+        )
+    }
     
     return (
         <div>
