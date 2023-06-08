@@ -29,10 +29,8 @@
 .page-header__big {
     font-size: 68px;
     animation: fadein 2s;
-    padding-top: 10%;
     @media (min-width: $desktop-breakpoint) {
         font-size: 120px;
-        padding-top: 0%;
     }
 }
 
@@ -58,6 +56,10 @@
 
 .page-header__big--projectpage {
     color: $purple;
+    padding-top: 10%;
+    @media (min-width: $desktop-breakpoint) {
+        padding-top: 0%;
+    }
 }
 
 .page-header__big--404 {
