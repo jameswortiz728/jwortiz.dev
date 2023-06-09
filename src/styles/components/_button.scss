@@ -115,7 +115,7 @@
     color: $blue;
 }
 
-.button--group {
+.button__group {
     display: flex;
     justify-content: space-between;
     @media (min-width: $desktop-breakpoint) {
