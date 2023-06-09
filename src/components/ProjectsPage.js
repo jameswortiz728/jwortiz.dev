@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                     <div className="section">
                         <div>
                             <h1 className="page-header__big page-header__big--projects">Projects</h1>
-                            <p>Click or tap on each box to learn more about each project</p>
+                            <p>Click or tap on each box to learn more about each project.</p>
                             <div className="show-for-desktop"><button onClick={() => handleScrollTo('resume')} className="button button--projects">Next Section: Resume</button></div>
                         </div> 
                         <div className="content-container__split">                
