@@ -15,8 +15,8 @@ export default [{
 }, {
     title: 'magic-conch',
     name: 'The Magic Conch',
-    listDescription: 'Too many choices? Let the Magic Conch decide for you. Features: React, SCSS',
-    pageDescription: 'Too many choices? Let the Magic Conch decide for you. Mobile Friendly. Created using React.js, styled with SCSS.',
+    listDescription: 'Too many choices? Let the Magic Conch decide for you! Features: React, SCSS',
+    pageDescription: 'Too many choices? Let the Magic Conch decide for you! Mobile Friendly. Created using React.js, styled with SCSS.',
     liveSite: 'https://magic-conch.jwortiz.dev/',
     sourceCode: 'https://github.com/jameswortiz728/magic-conch'
 }];
