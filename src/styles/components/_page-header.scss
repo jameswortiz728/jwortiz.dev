@@ -29,8 +29,10 @@
 .page-header__big {
     font-size: 68px;
     animation: fadein 2s;
+    text-align: center;
     @media (min-width: $desktop-breakpoint) {
         font-size: 120px;
+        text-align: left;
     }
 }
 
@@ -40,14 +42,23 @@
 
 .page-header__big--aboutme {
     color: $orange;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: 0;
+    }
 }
 
 .page-header__big--projects {
     color: $purple;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: 0;
+    }
 }
 
 .page-header__big--resume {
     color: $green;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: 0;
+    }
 }
 
 .page-header__big--contactme {
@@ -55,10 +66,13 @@
 }
 
 .page-header__big--projectpage {
-    color: $purple;
+    font-size: 60px;
+    color: $yellow;
     padding-top: 10%;
     @media (min-width: $desktop-breakpoint) {
+        font-size: 120px;
         padding-top: 0%;
+        margin-bottom: 0;
     }
 }
 
@@ -67,6 +81,7 @@
     padding-top: 10%;
     @media (min-width: $desktop-breakpoint) {
         padding-top: 0%;
+        margin-bottom: 0;
     }
 }
 
