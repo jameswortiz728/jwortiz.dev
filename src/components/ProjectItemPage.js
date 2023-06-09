@@ -56,27 +56,6 @@ const ProjectItemPage = () => {
             <RedirectModal open={sourceOpen} closeModal={closeModal} url={project.sourceCode}/>  
         </div>
     )
-
-    // return (
-    //     <div>
-    //         <div className="page-header">
-    //             <div className="content-container">
-    //                 <h1 className="page-header__title">{project.name}</h1>
-    //             </div>
-    //         </div>
-    //         <div className="content-container">
-    //             <img src={`/images/${project.title}.png`} />
-    //             <div className="button--group">
-    //                 <button className="button" onClick={openLiveModal}>Live Site</button>
-    //                 <button className="button button--source" onClick={openSourceModal}>Source Code</button>
-    //                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
-    //             </div>
-    //             <p>{project.pageDescription}</p>
-    //         </div>
-    //         <RedirectModal open={liveOpen} closeModal={closeModal} url={project.liveSite}/>
-    //         <RedirectModal open={sourceOpen} closeModal={closeModal} url={project.sourceCode}/>   
-    //     </div>
-    // )
 };
 
 export default ProjectItemPage;
