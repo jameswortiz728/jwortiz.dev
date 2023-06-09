@@ -1,17 +1,3 @@
-.button2 {
-    background: $purple;
-    border: none;
-    color: white;
-    display: inline-block;
-    font-size: $font-size-large;
-    font-weight: 300;
-    line-height: 1;
-    padding: $s-size;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
 .button {
     background: $purple;
     border: none;
