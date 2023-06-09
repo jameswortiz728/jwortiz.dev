@@ -29,9 +29,20 @@
     }
 }
 
-.content-container__right {
+.content-container__split {
     max-width: 80rem;
     @media (min-width: $desktop-breakpoint) {
         width: 80rem;
     }
+}
+
+.content-container__split--background {
+    background-color: $off-black;
+    padding: $l-size;
+}
+
+.content-container__split--contactbackground {
+    background-color: $off-black;
+    padding: $l-size;
+    margin-bottom: 2%;
 }

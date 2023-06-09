@@ -34,7 +34,7 @@ const ProjectItemPage = () => {
         <div>
             <div className="content-container">
                 <div className="section section--project">
-                    <div>
+                    <div className="content-container__split">
                         <h1 className="page-header__big page-header__big--projectpage">{project.name}</h1>
                         <div> 
                             <div className="button--group">
@@ -42,10 +42,12 @@ const ProjectItemPage = () => {
                                 <button className="button button--source" onClick={openSourceModal}>Source Code</button>
                                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
                             </div>
-                            <p>{project.pageDescription}</p>
+                            <div className="content-container__split content-container__split--background">
+                                <p>{project.pageDescription}</p>
+                            </div>   
                         </div> 
                     </div>
-                    <div>                
+                    <div className="content-container__split">                
                         <img src={`/images/${project.title}.png`}/>
                     </div>
                 </div>

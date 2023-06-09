@@ -7,7 +7,7 @@ const AboutMePage = () => {
             <div className="content-container">
                 <div className="section">
                     <h1 className="page-header__big page-header__big--aboutme">About me</h1> 
-                    <div >                
+                    <div className="content-container__split content-container__split--background">                
                         <p>
                             I am a Software Engineer with experience in JavaScript and Java. I graduated from Pace University with a Bachelor's in Computer Science. 
                             As a kid I built Legos, currently I build web applications, and in the future? Potentially building one for you too.

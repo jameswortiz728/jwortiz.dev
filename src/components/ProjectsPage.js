@@ -23,7 +23,7 @@ const ProjectsPage = () => {
                             <p>Click or tap on each box to learn more about each project</p>
                             <div className="show-for-desktop"><button onClick={() => handleScrollTo('resume')} className="button button--projects">Next Section: Resume</button></div>
                         </div> 
-                        <div >                
+                        <div className="content-container__split">                
                             <ProjectList/>
                             <div className="show-for-mobile"><button onClick={() => handleScrollTo('resume')} className="button button--projects">Next Section: Resume</button></div>
                         </div>

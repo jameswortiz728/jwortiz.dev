@@ -42,7 +42,7 @@ const ContactMePage = () => {
                     <div>
                         <h1 className="page-header__big page-header__big--contactme">Contact me</h1>
                     </div>      
-                    <div className="content-container__right">                
+                    <div className="content-container__split content-container__split--contactbackground">                
                         <form className="form" onSubmit={handleSubmit}>
                             <label htmlFor="email">
                                 Your email address:
