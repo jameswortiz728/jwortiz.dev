@@ -17,17 +17,16 @@ const ContactMePage = () => {
 
     if (state.succeeded) {
         return (
-            <div id="contactme" className="spacer">
+            <div id="contactme">
                 <div className="content-container">
                     <div className="section">
                         <div>
                             <h1 className="page-header__big page-header__big--contactme">Contact me</h1>
                         </div>
-                        <div className="content-container">
+                        <div className="content-container__split content-container__split--contactbackground">
                             <h1>An email has been sent to James@jwortiz.dev</h1>
                             <button onClick={() => handleScrollTo('dashboard')} className="button button--contactme">Next Section: Welcome</button>
-                        <div className="spacer"></div>
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <ContactModal open={open} closeModal={closeModal}/> 

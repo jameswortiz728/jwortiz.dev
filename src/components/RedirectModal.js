@@ -14,8 +14,8 @@ const RedirectModal = ({ open, closeModal, url }) => {
             >
                 <h3 className="modal__title">You will be redirected</h3>
                 <p className="modal__body">Are you sure?</p>
-                <Link target="_blank" to={url}><button className="button" onClick={closeModal}>Let's go</button></Link>
-                <button className="button button--secondary" onClick={closeModal}>Nevermind</button>
+                <Link target="_blank" to={url}><button className="button button--modalgo" onClick={closeModal}>Let's go</button></Link>
+                <button className="button button--secondary" onClick={closeModal}>Cancel</button>
             </Modal>
         </div> 
     )

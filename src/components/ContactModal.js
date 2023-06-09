@@ -13,7 +13,7 @@ const ContactModal = ({ open, closeModal }) => {
             >
                 <h3 className="modal__title">Thanks for your submission!</h3>
                 <p className="modal__body">An email has been sent to James@jwortiz.dev</p>
-                <button className="button button--secondary" onClick={closeModal}>Close</button>
+                <button className="button button--contactme" onClick={closeModal}>Close</button>
             </Modal>
         </div> 
     )
