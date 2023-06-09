@@ -10,7 +10,7 @@ const ProjectListItem = ({ project }) => {
       state = { project }
     >
       <div>
-        <h3>{project.name}</h3>
+        <h3 className="text__coloritemheader">{project.name}</h3>
         <p>{project.listDescription}</p>
       </div>
     </Link> 

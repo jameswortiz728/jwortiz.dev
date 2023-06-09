@@ -42,8 +42,8 @@ const ProjectItemPage = () => {
                                 <button className="button button--source" onClick={openSourceModal}>Source Code</button>
                                 <Link to="/" state = {{ id: "projects" }}><button className="button button--secondary" onClick={() => handleScrollTo('projects')}>Go back</button></Link>
                             </div>
-                            <div className="content-container__split content-container__split--background">
-                                <p>{project.pageDescription}</p>
+                            <div className="content-container__split content-container__split--projectbackground">
+                                <p className="text__indent">{project.pageDescription}</p>
                             </div>   
                         </div> 
                     </div>

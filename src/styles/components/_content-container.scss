@@ -41,6 +41,16 @@
     padding: $l-size;
 }
 
+.content-container__split--projectbackground {
+    background-color: $off-black;
+    padding: $m-size;
+    margin-top: 2.5%;
+    margin-bottom: 7.5%;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: 0;
+    }
+}
+
 .content-container__split--contactbackground {
     background-color: $off-black;
     padding: $l-size;
