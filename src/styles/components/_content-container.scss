@@ -21,7 +21,9 @@
 .content-container__resume {
     height: 70vh;
     width: 100%;
+    background-color: $off-white;
     @media (min-width: $desktop-breakpoint) {
+        background-color: $light-black;
         flex: 1;
         height: 84vh;
         padding-top: 7.5%;
