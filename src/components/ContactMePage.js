@@ -17,7 +17,7 @@ const ContactMePage = () => {
 
     if (state.succeeded) {
         return (
-            <div id="contactme">
+            <div id="contactMe">
                 <div className="content-container">
                     <div className="section">
                         <div>
@@ -35,7 +35,7 @@ const ContactMePage = () => {
     }
 
     return (
-        <div id="contactme">
+        <div id="contactMe">
             <div className="content-container">
                 <div className="section">
                     <div>

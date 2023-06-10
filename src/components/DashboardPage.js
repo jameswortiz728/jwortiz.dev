@@ -10,7 +10,7 @@ const DashboardPage = () => {
                     <div className="content-container__split content-container__split--background">                
                         <p className="text__indent">Hi! My name is James Ortiz, and this is my personal website. You can learn more about me, explore projects I've worked on, and get in contact with me.</p>
                         <p>You can navigate by scrolling, using the above header, or the button below to learn more about me.</p>
-                        <button onClick={() => handleScrollTo('aboutMe')} className="button button--welcome">Next Section: About Me</button>
+                        <button onClick={() => handleScrollTo('aboutMe')} className="button button--welcome">Next Section: About me</button>
                     </div>
                 </div>
             </div>
