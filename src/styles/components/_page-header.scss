@@ -38,10 +38,11 @@
     font-size: 60px;
     color: $purple;
     padding-top: 20%;
+    text-align: center;
     @media (min-width: $desktop-breakpoint) {
-        font-size: 120px;
+        font-size: 100px;
         padding-top: 0%;
-        margin-bottom: 0;
+        margin-bottom: $l-size;
     }
 }
 
