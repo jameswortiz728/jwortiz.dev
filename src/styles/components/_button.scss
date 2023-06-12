@@ -2,7 +2,7 @@
     background: $purple;
     border: none;
     border-bottom: .6rem solid darken($purple, 10%);
-    color: white;
+    color: $off-white;
     display: inline-block;
     font-size: $font-size-large;
     font-weight: 300;
@@ -109,5 +109,37 @@
     }
 }
 
+.button__mobileheader {
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($purple, 10%);
+    color: $off-white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: $m-size;
+    padding: $s-size;
+    width: 100%;
+}
 
+.button__mobileheader--aboutme {
+    background: $orange;
+    border-bottom: .6rem solid darken($orange, 10%);
+}
+
+.button__mobileheader--projects {
+    background: $purple;
+    border-bottom: .6rem solid darken($purple, 10%);
+}
+
+.button__mobileheader--resume {
+    background: $green;
+    border-bottom: .6rem solid darken($green, 10%);
+}
+
+.button__mobileheader--contactme {
+    background: $red;
+    border-bottom: .6rem solid darken($red, 10%);
+}
 

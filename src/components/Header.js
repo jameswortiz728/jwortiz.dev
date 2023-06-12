@@ -35,12 +35,12 @@ export const Header = () => {
                 </div>
                 {open && 
                     <div className="show-for-mobile">
-                        <ul className="header__dropdown">
-                            <li><Link onClick={closeDropdown} to="/" state = {{ id: "aboutMe" }}><button onClick={() => handleScrollTo('aboutMe')} className="button__link button__link--aboutme">About me</button></Link></li>
-                            <li><Link onClick={closeDropdown} to="/" state = {{ id: "projects" }}><button onClick={() => handleScrollTo('projects')} className="button__link button__link--projects">Projects</button></Link></li>
-                            <li><Link onClick={closeDropdown} to="/" state = {{ id: "resume" }}><button onClick={() => handleScrollTo('resume')} className="button__link button__link--resume">Resume</button></Link></li>
-                            <li><Link onClick={closeDropdown} to="/" state = {{ id: "contactMe" }}><button onClick={() => handleScrollTo('contactme')} className="button__link button__link--contactme">Contact me</button></Link></li>
-                        </ul>
+                        <div className="header__dropdown">
+                            <Link onClick={closeDropdown} to="/" state = {{ id: "aboutMe" }}><button onClick={() => handleScrollTo('aboutMe')} className="button__mobileheader button__mobileheader--aboutme">About me</button></Link>
+                            <Link onClick={closeDropdown} to="/" state = {{ id: "projects" }}><button onClick={() => handleScrollTo('projects')} className="button__mobileheader button__mobileheader--projects">Projects</button></Link>
+                            <Link onClick={closeDropdown} to="/" state = {{ id: "resume" }}><button onClick={() => handleScrollTo('resume')} className="button__mobileheader button__mobileheader--resume">Resume</button></Link>
+                            <Link onClick={closeDropdown} to="/" state = {{ id: "contactMe" }}><button onClick={() => handleScrollTo('contactme')} className="button__mobileheader button__mobileheader--contactme">Contact me</button></Link>
+                        </div>
                     </div>
                 }
             </div>
