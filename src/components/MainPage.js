@@ -12,7 +12,7 @@ const MainPage = () => {
 
     useEffect(() => {
         if(location.state) {
-            setTimeout(() => handleScrollTo(location.state.id), 10);
+            setTimeout(() => handleScrollTo(location.state.id), 50);
         }
     }); 
 
