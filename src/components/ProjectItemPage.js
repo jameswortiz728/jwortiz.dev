@@ -47,8 +47,8 @@ const ProjectItemPage = () => {
                             </div>   
                         </div> 
                     </div>
-                    <div className="content-container__split">                
-                        <img src={`/images/${project.title}.png`}/>
+                    <div className="content-container__split content-container__split--image">                
+                        <img className="content-container__image" src={`/images/${project.title}.png`}/>
                     </div>
                 </div>
             </div>
