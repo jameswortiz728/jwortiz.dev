@@ -2,7 +2,7 @@ export default [{
     title: 'firetyper',
     name: 'Firetyper (DEMO)',
     listDescription: "Improve your typing skills! Features: React, SCSS",
-    pageDescription: "Improve your typing skills! A typing test with dynamic prompts for improving your typing ability, or for warming up. Created using React.js, styled with SCSS. *Work in progress. Continuously updated to add more features.",
+    pageDescription: "Improve your typing skills! A typing test with dynamic prompts for improving your typing ability, or for warming up. Intended for desktop use with a keyboard. Created using React.js, styled with SCSS. *Work in progress. Continuously updated to add more features and other improvements.",
     liveSite: 'https://firetyper.jwortiz.dev/',
     sourceCode: 'https://github.com/jameswortiz728/Firetyper'
 }, {
