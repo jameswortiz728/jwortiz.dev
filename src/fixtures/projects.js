@@ -1,4 +1,11 @@
 export default [{
+    title: 'firetyper',
+    name: 'Firetyper (DEMO)',
+    listDescription: "Improve your typing skills! Features: React, SCSS",
+    pageDescription: "Improve your typing skills! A typing test with dynamic prompts for improving your typing ability, or for warming up. Created using React.js, styled with SCSS. *Work in progress. Continuously updated to add more features.",
+    liveSite: 'https://firetyper.jwortiz.dev/',
+    sourceCode: 'https://github.com/jameswortiz728/Firetyper'
+}, {
     title: 'jwortiz-dev',
     name: 'JWOrtiz.dev',
     listDescription: "You're already here! Features: React, SCSS",
@@ -12,11 +19,4 @@ export default [{
     pageDescription: 'Take control of your expenses! Add, edit, or remove expenses. Search for expenses using filters based on amount, date created, and others. Mobile Friendly. Created using React.js, state managed by Redux, styled with SCSS, tested with Jest, connected to Google Firebase.',
     liveSite: 'https://expenses-tracker.jwortiz.dev/',
     sourceCode: 'https://github.com/jameswortiz728/Expenses-Tracker'
-}, {
-    title: 'magic-conch',
-    name: 'The Magic Conch',
-    listDescription: 'Too many choices? Let the Magic Conch decide for you! Features: React, SCSS',
-    pageDescription: 'Too many choices? Let the Magic Conch decide for you! Mobile Friendly. Created using React.js, styled with SCSS.',
-    liveSite: 'https://magic-conch.jwortiz.dev/',
-    sourceCode: 'https://github.com/jameswortiz728/magic-conch'
 }];
